@@ -1,19 +1,22 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+)
 
 type szemely struct{
-	Nev : string
-	Kor : int	
+	Nev  string
+	Kor  int	
 	}
 
 func (sz *szemely) beszel() string{
-	return fmt.
+	return sz.Nev +" a nevem "+ strconv.Itoa(sz.Kor)+" eves vagyok es takaritok"
 } 
 
 func main() {
-
-	fmt.Println("bau")
+	magdaneni:=szemely{Nev : "Magda", Kor : 65}
+	fmt.Println(magdaneni.beszel())
 }
 
 
