@@ -9,7 +9,7 @@
             "type": "go",
             "request": "launch",
             "mode": "auto",
-            "program": "./go-debugging/main.go"
+            "program": "./ofic_web_tutorials/static/main.go"
         }
     ]
 }
