@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <style>
+    .done {
+    font-family: "Times New Roman", Times, serif;
+    color:Tomato; 
+    }
+
+    .open{
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+ 
+    </style>
+    </head>
+
+    <body>
+
+
+        <h1>{{.PageTitle}}</h1>
+        <ul>
+            {{range .Todos}}
+                {{if .Done}}
+                    <li class="done">{{.Title}}</li>
+                {{else}}
+                    <li class="open"> {{.Title}}</li>
+                {{end}}
+            {{end}}
+        </ul>
+
+    </body>
+</html>

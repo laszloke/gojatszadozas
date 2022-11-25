@@ -9,7 +9,7 @@
             "type": "go",
             "request": "launch",
             "mode": "auto",
-            "program": "./ofic_web_tutorials/static/main.go"
+            "program": "./ofic_web_tutorials/JSON/main.go"
         }
     ]
 }
